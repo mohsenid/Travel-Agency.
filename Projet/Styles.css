@@ -166,7 +166,7 @@ header nav ul li a{
 }
 
 article h4{
-	border-bottom: 1px solid #ddd
+	border-bottom: 1px solid #ddd;
 	padding-bottom:20px;
 	text-transform: uppercase;
 	margin-bottom: 20px;
