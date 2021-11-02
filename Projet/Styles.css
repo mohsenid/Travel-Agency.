@@ -13,10 +13,10 @@ h1,h2,h3,h4{
 }
 h1{
 	font-family: 'Crete Round', serif ;
-	font-size: 45px;
+	font-size: 4vw;
 }
 h2{
-	font-size: 55px;
+	font-size: 3vw;
 }
 h3{
 	font-size: 30px;
@@ -36,7 +36,7 @@ a{
 	color: #444
 }
 .wrapper{
-	width: 940px;
+	max-width: 940px;
 	margin:0 auto;
 	padding: 0 10px;
 }
@@ -65,7 +65,7 @@ header nav{
 	margin-top: 50px
 }
 header nav ul li{
-	float: left;
+	
 	display: inline-block;
 }
 header nav ul li a{
@@ -73,6 +73,8 @@ header nav ul li a{
 	font-weight: bold;
 	margin-right: 20px;
 }
+
+/* MENU BURGER */
 
 
 /*MAINE IMAGE*/
@@ -94,7 +96,7 @@ header nav ul li a{
 	height: 50px;
 	background: #ff7a00;
 	color:#fff;
-	font-size: 20px;
+	/* font-size: 20px; */
 	margin: 0 auto;
 	line-height: 50px;
 	text-align: center;
@@ -155,7 +157,7 @@ header nav ul li a{
 	height: 270px;
 	float: left;
 	border-radius: 10px;
-
+	overflow: hidden;
 }
 #possibilities article: first-child{
 	margin-right: 20px;
@@ -256,4 +258,92 @@ footer h1{
 	font-weight: bold;
 	padding-top: 30px;
 	color:#777;
+}
+
+
+.hamburger{
+	display: none;
+}
+/* --------RESPONVIVE--------- */
+@media (max-width: 840px){
+	#steps ul li{
+		float: none;
+		margin: 0 auto;
+	}
+	.wrapper{
+		width: fit-content;
+	}
+	form input{
+		display: block;
+		margin: 10px auto;
+	}
+	h1{
+		font-size: 3rem;
+	}
+	h2{
+		font-size: 1.5rem;
+	}
+	#possibilities article{
+		margin-top: 10px;
+		float: none;
+	}
+	/* MENU BURGER */
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	  }
+	  header nav ul li{
+	
+		display: block;
+		text-align: center;
+	}
+	  .menuItem {
+		display: block;
+		margin: 2rem 4rem;
+		font-size: 1.8rem;
+		color: #ff7a00;
+		text-decoration: none;
+	  }
+	  
+	  .menuItem:hover {
+		text-decoration: underline;
+		color: white;
+	  }
+	  
+	  .hamburger {
+		display: inline-block;
+		position: fixed;
+		z-index: 100;
+		top: 1rem;
+		right: 1rem;
+		padding: 4px;
+		border: black solid 1px;
+		background: white;
+		cursor: pointer;
+	  }
+	  
+	  .closeIcon {
+		display: none;
+	  }
+	  
+	  .menu {
+		position: fixed;
+		transform: translateY(-100%);
+		transition: transform 0.2s;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 99;
+		background: black;
+		color: white;
+		list-style: none;
+		padding-top: 4rem;
+	  }
+	  
+	  .showMenu {
+		transform: translateY(0);
+	  }
+
 }

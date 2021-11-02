@@ -3,6 +3,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Crete=+Round">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<title>
 			Travel Agency.
 		</title>
@@ -12,13 +13,18 @@
 			<div class="wrapper">
 				<h1>Travel Agency<span class="orange">.</span> </h1>
 				<nav>
-					<ul>
-						<li><a href="#main-image">Accueil</a></li>
-						<li><a href="#steps">Destinations</a></li>
-						<li><a href="#possibilities">Circuits</a></li>
-						<li><a href="#contact">Contact</a></li>
+					<ul class="menu">
+						<li><a class="menuItem" href="#main-image">Accueil</a></li>
+						<li><a class="menuItem" href="#steps">Destinations</a></li>
+						<li><a class="menuItem" href="#possibilities">Circuits</a></li>
+						<li><a class="menuItem" href="#contact">Contact</a></li>
 
 					</ul>
+					<button class="hamburger">
+						<!-- material icons https://material.io/resources/icons/ -->
+						<i class="menuIcon material-icons">menu</i>
+						<i class="closeIcon material-icons">close</i>
+					</button>
 				</nav>
 			</div>
 		</header>
@@ -98,5 +104,6 @@
 				<div class="Copyright">Copyright © 2021. Tous droits réservés.</div>
 			</div>
 		</footer>
+		<script src="scritpt.js"></script>
 	</body>
 </html>
